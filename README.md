@@ -44,7 +44,7 @@ pip install chromadb python-docx sentence-transformers
 
 ✅ If you use `PersistentClient()` (save to disk) — you must define `embedding_function`.  
 ✅ If you use `HttpClient()` — depends on server config — you might need to define embedding at server side.  
-✅ If you want to use better multilingual models — you can use any SentenceTransformer model.  
+✅ If you want to use better multilingual models — you can use any SentenceTransformer model or any other models for creating the embeddings like OpenAI or HuggingFace models.  
 ✅ If you want full control — you can pass embeddings yourself using:
 
 ```python
@@ -53,3 +53,6 @@ collection.add(
     ids=[...],
     embeddings=[your_computed_embeddings]
 )
+```
+## For more details and advanced usage, see the official [ChromaDB Documentation](https://docs.trychroma.com/).
+
